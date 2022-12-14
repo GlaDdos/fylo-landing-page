@@ -1,0 +1,438 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  color: hsl(243deg, 87%, 12%);
+}
+* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  margin: 0;
+  width: 100%;
+}
+* body div.wrapper {
+  max-width: 340px;
+  background-color: white;
+}
+* body div.wrapper header {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+* body div.wrapper header div.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+}
+* body div.wrapper header div.brand img {
+  max-width: 5rem;
+}
+* body div.wrapper header nav ul {
+  list-style: none;
+  padding: 0;
+}
+* body div.wrapper header nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+* body div.wrapper header nav ul li:hover {
+  cursor: pointer;
+  color: hsl(238deg, 22%, 44%);
+}
+* body div.wrapper header nav ul li:last-child {
+  margin-right: 0;
+}
+* body div.wrapper main section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  padding: 1.5rem;
+}
+* body div.wrapper main section.curve {
+  position: relative;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, hsl(240deg, 75%, 98%) 10%), url(../images/bg-curve-mobile.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 4rem;
+  margin-bottom: 0;
+}
+* body div.wrapper main section.blue {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 4rem;
+  background-color: hsl(238deg, 22%, 44%);
+}
+* body div.wrapper main section.blue div.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* body div.wrapper main section.blue div.content-wrapper h2, * body div.wrapper main section.blue div.content-wrapper p {
+  color: hsl(240deg, 75%, 98%);
+  text-align: center;
+}
+* body div.wrapper main section.blue div.content-wrapper h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+* body div.wrapper main section.blue div.content-wrapper form input, * body div.wrapper main section.blue div.content-wrapper form button {
+  box-sizing: border-box;
+}
+* body div.wrapper main section.blue div.content-wrapper form span.error.active {
+  font-size: 0.8rem;
+  color: white;
+}
+* body div.wrapper main section.info {
+  background-color: hsl(243deg, 87%, 12%);
+  padding: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+* body div.wrapper main section.info img.logo {
+  width: 60%;
+  filter: brightness(0) invert(1);
+  margin-bottom: 2rem;
+}
+* body div.wrapper main section.info div.text-icon {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: row;
+  align-items: center;
+}
+* body div.wrapper main section.info div.text-icon p {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+* body div.wrapper main section.info div.text-icon div.icon {
+  display: flex;
+  align-items: center;
+}
+* body div.wrapper main section.info div.text-icon div.icon img {
+  margin-right: 1rem;
+}
+* body div.wrapper main section.info ul {
+  list-style: none;
+  margin: 0;
+  margin-top: 3rem;
+  padding: 0;
+}
+* body div.wrapper main section.info ul li {
+  margin: 0;
+  padding: 0;
+  color: white;
+  margin-bottom: 0.8rem;
+}
+* body div.wrapper main section.info ul li:hover {
+  cursor: pointer;
+  color: hsl(238deg, 22%, 44%);
+}
+* body div.wrapper main section.info div.icon-row {
+  display: flex;
+  justify-content: center;
+}
+* body div.wrapper main section.info div.icon-row div.icon {
+  display: flex;
+  margin: 3rem 0.3rem 0 0.3rem;
+  border: 1px solid white;
+  border-radius: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+* body div.wrapper main section.info div.icon-row div.icon img {
+  width: 0.8rem;
+  filter: brightness(0) invert(1);
+}
+* body div.wrapper main section.info div.icon-row div.icon:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+* body div.wrapper main section div.image-wrapper {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+* body div.wrapper main section div.image-wrapper img {
+  max-width: 100%;
+}
+* body div.wrapper main section div.content-wrapper {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+* body div.wrapper main section div.content-wrapper h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2rem;
+}
+* body div.wrapper main section div.content-wrapper h2 {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+* body div.wrapper main section div.content-wrapper p {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+* body div.wrapper main section div.content-wrapper p.center {
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+* body div.wrapper main section div.content-wrapper p.gray {
+  color: hsl(0deg, 0%, 75%);
+}
+* body div.wrapper main section div.content-wrapper div.green-link {
+  font-size: 0.8rem;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem auto;
+  padding-bottom: 0.25rem;
+  align-items: end;
+  border-bottom: 2px solid hsl(170deg, 45%, 43%);
+}
+* body div.wrapper main section div.content-wrapper div.green-link a {
+  color: hsl(170deg, 45%, 43%);
+  text-decoration: none;
+}
+* body div.wrapper main section div.content-wrapper div.green-link img {
+  width: 1rem;
+  height: 1rem;
+  margin-bottom: 0.15rem;
+  margin-left: 0.5rem;
+}
+* body div.wrapper main section div.content-wrapper div.testimonial {
+  box-sizing: border-box;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0.5rem;
+  border-radius: 0.2rem;
+  background-color: white;
+  box-shadow: 0px 0px 15px -7px rgb(66, 68, 90);
+}
+* body div.wrapper main section div.content-wrapper div.testimonial p {
+  font-size: 0.65rem;
+  line-height: 1.2rem;
+  margin-bottom: 1rem;
+}
+* body div.wrapper main section div.content-wrapper div.testimonial div.author {
+  display: flex;
+  flex-direction: row;
+}
+* body div.wrapper main section div.content-wrapper div.testimonial div.author img {
+  border-radius: 100%;
+  width: 2rem;
+  height: auto;
+  align-self: center;
+  margin-right: 0.8rem;
+}
+* body div.wrapper main section div.content-wrapper div.testimonial div.author div.description p {
+  margin: 0;
+  padding: 0;
+  line-height: 0.9rem;
+}
+* body div.wrapper main section div.content-wrapper div.testimonial div.author div.description p.name {
+  font-weight: bold;
+}
+* body div.wrapper main section div.content-wrapper div.testimonial div.author div.description p.job-desc {
+  font-size: 0.58rem;
+  color: hsl(0deg, 0%, 75%);
+}
+* body div.wrapper main section div.content-wrapper form {
+  width: 100%;
+}
+* body div.wrapper main section div.content-wrapper form input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+* body div.wrapper main section div.content-wrapper form input::-moz-placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+* body div.wrapper main section div.content-wrapper form input:-ms-input-placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+* body div.wrapper main section div.content-wrapper form input::placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+* body div.wrapper main section div.content-wrapper form input.invalid {
+  outline: 0;
+  border-style: solid;
+  border-color: #900;
+}
+* body div.wrapper main section div.content-wrapper form span.error.active {
+  font-size: 0.8rem;
+  color: #900;
+}
+* body div.wrapper main section div.content-wrapper form button {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  background-color: hsl(224deg, 93%, 58%);
+  color: white;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  border: 1px solid hsl(238deg, 22%, 44%);
+}
+* body div.wrapper main section div.content-wrapper form button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 1000px) {
+  * body div.wrapper {
+    max-width: 1440px;
+    width: 1440px;
+  }
+  * body div.wrapper header {
+    margin: 2rem 4rem;
+    font-size: 1rem;
+  }
+  * body div.wrapper header div.brand img {
+    max-width: none;
+    width: 10rem;
+  }
+  * body div.wrapper header nav ul li {
+    color: hsl(243deg, 87%, 12%);
+    margin-right: 3.5rem;
+  }
+  * body div.wrapper main section {
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+    margin-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100%;
+  }
+  * body div.wrapper main section div.image-wrapper {
+    width: auto;
+  }
+  * body div.wrapper main section div.content-wrapper {
+    margin-right: 3rem;
+    margin-top: 2rem;
+  }
+  * body div.wrapper main section div.content-wrapper h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  * body div.wrapper main section div.content-wrapper h2 {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  * body div.wrapper main section div.content-wrapper p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  * body div.wrapper main section div.content-wrapper p.center {
+    text-align: left;
+    margin-right: 2rem;
+    margin-left: 0;
+  }
+  * body div.wrapper main section div.content-wrapper div.green-link {
+    font-size: 1rem;
+    text-align: left;
+    margin: 1rem 0;
+    border-bottom: 1px solid hsl(170deg, 45%, 43%);
+  }
+  * body div.wrapper main section div.content-wrapper div.testimonial {
+    width: 50%;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  * body div.wrapper main section div.content-wrapper div.testimonial p {
+    font-size: 0.8rem;
+    margin-right: 0;
+    width: auto;
+  }
+  * body div.wrapper main section div.content-wrapper form {
+    display: flex;
+    align-items: baseline;
+    width: 80%;
+  }
+  * body div.wrapper main section div.content-wrapper form div.input-wrapper {
+    width: 90%;
+    margin-right: 1rem;
+  }
+  * body div.wrapper main section div.content-wrapper form div.input-wrapper input {
+    font-size: 0.9rem;
+    padding: 1rem 1 rem;
+  }
+  * body div.wrapper main section div.content-wrapper form button {
+    width: 50%;
+  }
+  * body div.wrapper main section.curve {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, hsl(240deg, 75%, 98%) 25%), url(../images/bg-curve-desktop.svg);
+    padding-bottom: 8rem;
+  }
+  * body div.wrapper main section.curve div.image-wrapper {
+    margin-top: 8rem;
+    width: 60%;
+  }
+  * body div.wrapper main section.curve div.content-wrapper {
+    margin-top: 4rem;
+  }
+  * body div.wrapper main section.curve div.content-wrapper p {
+    width: 80%;
+    color: hsl(243deg, 87%, 12%);
+  }
+  * body div.wrapper main section.blue div.content-wrapper {
+    flex-direction: row;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  * body div.wrapper main section.blue div.content-wrapper h2, * body div.wrapper main section.blue div.content-wrapper p {
+    text-align: left;
+  }
+  * body div.wrapper main section.blue div.content-wrapper div.content {
+    box-sizing: border-box;
+    max-width: 50%;
+    padding-right: 2rem;
+  }
+  * body div.wrapper main section.blue div.content-wrapper form {
+    padding-left: 5rem;
+    flex-direction: column;
+  }
+  * body div.wrapper main section.blue div.content-wrapper form input {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  * body div.wrapper main section.info {
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-right: 20rem;
+    padding-left: 4rem;
+  }
+  * body div.wrapper main section.info img.logo {
+    width: 10rem;
+    margin-bottom: 1rem;
+  }
+  * body div.wrapper main section.info div.content {
+    display: flex;
+    justify-content: space-between;
+  }
+  * body div.wrapper main section.info ul {
+    margin-top: 0;
+  }
+  * body div.wrapper main section.info div.icon-row {
+    align-items: flex-start;
+  }
+  * body div.wrapper main section.info div.icon-row div.icon {
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
